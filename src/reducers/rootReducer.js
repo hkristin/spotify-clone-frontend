@@ -1,5 +1,5 @@
 import { combineReducers, createStore } from 'redux'
-import rootReducer, {
+import {
     ArtistsReducer,
     SongsReducer,
     PlaylistsReducer
