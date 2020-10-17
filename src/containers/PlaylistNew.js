@@ -3,6 +3,11 @@ import { addPlaylist } from '../actions/index'
 import { connect } from 'react-redux'
 import { render } from '@testing-library/react'
 
+class PlaylistNew extends Component {
+    state = {
+        creator: ''
+    }
+
 
 handleChange = e => {
     this.setState({
@@ -20,9 +25,15 @@ handleSubmit = e => {
 
 render() {
     return (
-        
-    )
+        <form id="new-playlist-form" onSubmit={this.handleSubmit}>
+            <h3>Add New Playlist</h3>
+            <label>Creator</label> <br />
+            <input type="text" onChange={this.handleChange} value={this.state.creator} creator="creator"/>
+            <br /> <br />
+            <input type="submit" value="Create Playlist" />
+        </form>
+        )
+    }
 }
-
 
 export default connect(null, { addPlaylist })(PlaylistNew)

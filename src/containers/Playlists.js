@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import AddButton from '../components/AddButton'
 import { fetchPlaylists, addPlaylist} from '../actions/index'
 
-class Podcasts extends Component {
+class Playlists extends Component {
 
   componentDidMount() {
     this.props.fetchPodcasts()
@@ -29,7 +29,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     fetchPlaylists: () => dispatch(fetchPlaylists()),
-    addPlaylist: podcast => dispatch(addPlaylist(playlist))
+    addPlaylist: playlist => dispatch(addPlaylist(playlist))
   }
 }
 
