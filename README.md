@@ -1,6 +1,3 @@
-Backend: https://github.com/hkristin/spotify-clone-backend
-
-
 About 
 
 Users can create, store, and delete many playlists. Users can also display all songs and artists in the database.
