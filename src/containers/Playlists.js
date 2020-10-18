@@ -7,7 +7,7 @@ import { fetchPlaylists, addPlaylist} from '../actions/index'
 class Playlists extends Component {
 
   componentDidMount() {
-    this.props.fetchPodcasts()
+    this.props.fetchPlaylists()
   }
 
   render() {

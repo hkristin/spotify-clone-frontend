@@ -7,7 +7,6 @@ const SongCard = ({song}) => {
       Title: <span id="song-title">{song.title}</span> <br />
       Release Date: <span id="song-release-date">{song.release_date}</span> <br />
       Album: <span id="song-album">{song.album}</span> <br />
-
       <a id="song-link" rel="noopener noreferrer" target="_blank" href={song.link}>Give it a Try!</a> <br />
       <br /><br />
     </div>

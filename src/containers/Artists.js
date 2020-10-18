@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import PlaylistCard from '../components/PlaylistCard'
 import { connect } from 'react-redux'
 import { fetchArtists} from '../actions/index'
+import ArtistCard from '../components/ArtistCard'
 
 class Artists extends Component {
 
@@ -12,7 +12,7 @@ class Artists extends Component {
   render() {
     return(
       <div className="artists-container">
-        {this.props.artists.map((p, id) => < AristCard key={id} artist={p} />)}
+        {this.props.artists.map((p, id) => < ArtistCard key={id} artist={p} />)}
       </div>
     )
   }

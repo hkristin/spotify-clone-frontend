@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import SongCard from '../components/PlaylistCard'
+import SongCard from '../components/SongCard'
 import { connect } from 'react-redux'
 import { fetchSongs } from '../actions/index'
 

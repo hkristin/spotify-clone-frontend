@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { addPlaylist } from '../actions/index'
 import { connect } from 'react-redux'
-import { render } from '@testing-library/react'
 
 class PlaylistNew extends Component {
     state = {
