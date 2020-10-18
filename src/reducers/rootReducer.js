@@ -1,15 +1,13 @@
-import { combineReducers, createStore } from 'redux'
-import {
-    ArtistsReducer,
-    SongsReducer,
-    PlaylistsReducer
-  } from './reducers'
+import { combineReducers } from 'redux'
+import artists from './ArtistsReducer'
+import songs from './SongsReducer'
+import playlists from './PlaylistsReducer'
+
 
 const rootReducer = combineReducers({
-        ArtistsReducer,
-        SongsReducer,
-        PlaylistsReducer
-  }) 
+    artists,
+    songs,
+    playlists
+}) 
 
-const store = createStore(rootReducer)
-console.log(store.getState())
+export default rootReducer
