@@ -1,10 +1,10 @@
 You can read the source code for the backend [here](https://github.com/hkristin/spotify-clone-backend)
 
-About 
+# About 
 
 Users can create, store, and delete many playlists. Users can also display all songs and artists in the database.
 
-Configuration
+# Configuration
 
 1.) Clone this repo to your local machine. cd into the repo.
 2.) Open two terminal/ console windows
@@ -12,7 +12,7 @@ Configuration
 4.) In backend, run bundle install, then rails db:migrate, then rails db:seed, then rails s
 5.) In frontend, run npm install && npm start
 
-Usage
+# Usage
 
 Home Page:
 
@@ -38,6 +38,6 @@ New Podcast Form:
 Fill the form with the proper information
 Submit and add to the database (redirects to the Playlists Page afterward)
 
-License 
+# License 
 
 This app is available as open source under the terms of the MIT License
