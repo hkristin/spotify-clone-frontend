@@ -5,7 +5,7 @@ import DeleteButton from './DeleteButton'
 
 const PlaylistCard = ({playlist, deletePlaylist}) => {
   return (
-    <div className="playlist-card">
+    <div id={playlist.id} className='playlist-card'>
       Creator: <span id="playlist-creator">{playlist.creator}</span> <br />
       <a id="playlist-link" rel="noopener noreferrer" target="_blank" href={playlist.link}>Give it a Try!</a> <br />
       < DeleteButton name="Delete Playlist" playlist_id={playlist.id} deletePlaylist={deletePlaylist}/>

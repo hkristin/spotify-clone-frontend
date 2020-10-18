@@ -4,9 +4,9 @@ export default (state = [], action) => {
         return [...action.payload]
       case "ADD_PLAYLIST":
         return [...state, action.payload]
-      case "REMOVE_PLAYLIST":
-        let newPlaylists = state.filter((playlist, id) => {
-          return id !== action.payload
+      case "DELETE_PLAYLIST":
+        let newPlaylists = state.filter((playlist) => {
+          return playlist.id !== action.payload
         })
         return [...newPlaylists]
       default:

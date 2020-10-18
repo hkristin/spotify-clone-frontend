@@ -10,6 +10,14 @@ class Playlists extends Component {
     this.props.fetchPlaylists()
   }
 
+  // componentDidUpdate(prevProps) {
+  //   debugger
+  //   // Typical usage (don't forget to compare props):
+  //   if (this.props.userID !== prevProps.userID) {
+  //     this.fetchData(this.props.userID);
+  //   }
+  // }
+
   render() {
     return(
       <div className="playlists-container">

@@ -19,10 +19,10 @@ class Home extends Component {
           </Switch>
         </Router>
 
-        <a href="/artists" >View Artists</a> <br />
-        <a href="/songs" >View Songs</a> <br />
-        <a href="/playlists" >View Playlists</a> <br />
-        <a href="/playlists/new" >New Playlist</a>
+        <a className="home-page-link" href="/artists" >View Artists</a> <br />
+        <a className="home-page-link" href="/songs" >View Songs</a> <br />
+        <a className="home-page-link" href="/playlists" >View Playlists</a> <br />
+        <a className="home-page-link" href="/playlists/new" >New Playlist</a>
       </div>
     )
   }

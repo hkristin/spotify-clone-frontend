@@ -27,7 +27,7 @@ render() {
         <form id="new-playlist-form" onSubmit={this.handleSubmit}>
             <h3>Add New Playlist</h3>
             <label>Creator</label> <br />
-            <input type="text" onChange={this.handleChange} value={this.state.creator} creator="creator"/>
+            <input type="text" onChange={this.handleChange} value={this.state.creator} name="creator"/>
             <br /> <br />
             <input type="submit" value="Create Playlist" />
         </form>

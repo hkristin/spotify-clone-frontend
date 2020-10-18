@@ -55,7 +55,7 @@ export const deletePlaylist = playlistId => {
       })
         .then(res => res.json())
         .then(playlist => {
-          dispatch({type: "REMOVE_PLAYLIST", payload: playlistId})
+          dispatch({type: "DELETE_PLAYLIST", payload: playlistId})
         })
     }
   }
